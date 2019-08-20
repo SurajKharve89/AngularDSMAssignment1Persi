@@ -1,0 +1,13 @@
+<header class="header">
+  <a routerLink="/employee/{{employeeDetail.empID}}" class="material-icons float-left">chevron_left</a>
+  Resume of {{employeeDetail.firstName +' '+ employeeDetail.lastName}}
+</header>
+
+<div class="employee-resume-wrapper">
+  <mat-tab-group>
+    <mat-tab label="Info">Information of  {{employeeDetail.firstName +' '+ employeeDetail.lastName}}</mat-tab>
+    <mat-tab label="Project">Projects of {{employeeDetail.firstName +' '+ employeeDetail.lastName}} </mat-tab>
+    <mat-tab label="Hobbies">Hobbies of{{employeeDetail.firstName +' '+ employeeDetail.lastName}} </mat-tab>
+    <mat-tab label="Notes">Notes of {{employeeDetail.firstName +' '+ employeeDetail.lastName}} </mat-tab>
+  </mat-tab-group>
+</div>

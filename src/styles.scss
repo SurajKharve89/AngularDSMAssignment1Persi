@@ -1,0 +1,29 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+html, body {
+    min-height: 100%;
+}
+
+body{
+    margin: 0%;
+
+    .header{
+        text-align: center;
+        background-color: #EFF4F8;
+        padding: 10px;
+        margin-bottom: 1%;
+    }
+
+    .float-right{
+        float:right;
+    }
+    
+    .float-left{
+        float:left;
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
+

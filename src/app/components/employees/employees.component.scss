@@ -1,0 +1,19 @@
+.employees-list {
+    margin: 1%;
+
+    ::ng-deep .mat-list-item-content {
+        border-bottom: 2px solid #F0F0F0;
+    }
+
+    ::ng-deep .mat-nav-list .mat-list-item-content:hover {
+        background-color: #F0F0F0;
+    }
+
+    .search-box {
+        float: right;
+        margin-right: 5px;
+    }
+}
+
+
+

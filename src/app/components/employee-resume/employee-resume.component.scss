@@ -1,0 +1,9 @@
+.employee-resume-wrapper{
+    ::ng-deep .mat-tab-group .mat-tab-body {
+        padding: 10px;
+    }
+
+    ::ng-deep .mat-tab-group , ::ng-deep .mat-tab-group .mat-tab-header{
+        border-bottom: 3px solid #EFF4F8;
+    }
+}

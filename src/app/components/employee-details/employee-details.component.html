@@ -1,0 +1,49 @@
+<header class="header">
+  <a routerLink="/employees" class="material-icons float-left">chevron_left</a>
+  Employee Details of {{employeeDetail.firstName +' '+ employeeDetail.lastName}}
+</header>
+
+<div class="employee-details-wrap">
+  <div class="title">
+    <div>
+      Employee ID: {{employeeDetail.empID}}
+    </div>
+    <div class="flip-resume"><a routerLink="/employee/resume/{{employeeDetail.empID}}">Flip to Resume</a></div>
+  </div>
+  <div class="content">
+    <div class="profile-pic">
+      <img src="./assets/img/{{employeeDetail.profileImg}}">
+    </div>
+    <div class="details-wrapper">
+      <div class="details">
+        <div>First Name : </div>
+        <div><strong>{{employeeDetail.firstName}}</strong></div>
+      </div>
+      <div class="details">
+        <div>Last Name : </div>
+        <div><strong>{{employeeDetail.lastName}}</strong></div>
+      </div>
+      <div class="details">
+        <div>Address : </div>
+        <div><strong>{{employeeDetail.address}}</strong></div>
+      </div>
+      <div class="details">
+        <div>City : </div>
+        <div><strong>{{employeeDetail.city}}</strong></div>
+      </div>
+      <div class="details">
+        <div>Postal Code : </div>
+        <div><strong>{{employeeDetail.postalCode}}</strong></div>
+      </div>
+      <div class="details">
+        <div>Phone (Home) : </div>
+        <div><strong>{{employeeDetail.phoneHome}}</strong></div>
+      </div>
+      <div class="details">
+        <div>Country : </div>
+        <div><strong>{{employeeDetail.country}}</strong></div>
+      </div>
+    </div>
+  </div>
+  
+</div>

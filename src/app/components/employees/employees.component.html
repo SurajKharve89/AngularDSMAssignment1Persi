@@ -1,0 +1,24 @@
+<header class="header">
+  <a routerLink="/home" class="material-icons float-left">chevron_left</a>
+  Employee List
+</header>
+<div class="employees-list">
+  <mat-list>
+    <mat-list-item>
+      <div matLine>
+          List of all employees
+          <input type="text" class="search-box" [(ngModel)]="searchFields.country" 
+          placeholder="search employee by country" (ngModelChange)="updateFilters()">
+          <input type="text" class="search-box" [(ngModel)]="searchFields.name" 
+          placeholder="search employee by name" (ngModelChange)="updateFilters()">
+      </div>
+    </mat-list-item>
+  </mat-list>
+  <mat-nav-list>
+    <mat-list-item role="listitem" *ngFor="let emp of employeeList | FilterByName : filters">
+      <a matLine routerLink="/employee/{{emp.empID}}">
+        {{emp.firstName +' '+ emp.lastName}} <i class="material-icons float-right">chevron_right</i>
+      </a>
+    </mat-list-item>
+  </mat-nav-list>
+</div>

@@ -1,0 +1,49 @@
+.employee-details-wrap {
+    margin: 1%;
+
+    .title {
+        display: flex;
+        padding-bottom: 10px;
+        border-bottom: 2px solid #F0F0F0;
+
+        .flip-resume{
+            margin-left: auto;
+        }
+    }
+
+    .content {
+        display: flex;
+        padding: 10px;
+        border-bottom: 2px solid #F0F0F0;
+
+        .profile-pic{
+            width: 25%;
+        }
+
+        .profile-pic img{
+            width: 100%;
+        }
+
+        .details-wrapper {
+            flex-grow: 1;
+            flex-basis: 100%;
+        }
+
+        .details-wrapper .details {
+            display: flex;
+            padding-top:5px;
+            padding-bottom: 5px;
+
+            div:first-child{
+                width: 20%;
+                text-align: right;
+                padding-right: 10px;
+            }
+
+            
+        }
+    
+        
+    }
+    
+}
